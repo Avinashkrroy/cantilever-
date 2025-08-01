@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow Pro Mobile - Productivity Anywhere</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ftaskflowp3766back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white border-b border-secondary-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2L20 6H28V26H4V6H12L16 2Z"/>
+                        <path d="M8 12H24M8 16H20M8 20H16" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                    <span class="ml-2 text-xl font-bold text-primary">TaskFlow Pro</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_task_management_platform.html" class="text-secondary-600 hover:text-primary transition-colors">Home</a>
+                    <a href="dashboard_main_task_interface.html" class="text-secondary-600 hover:text-primary transition-colors">Dashboard</a>
+                    <a href="analytics_insights_productivity_dashboard.html" class="text-secondary-600 hover:text-primary transition-colors">Analytics</a>
+                    <a href="mobile_app_landing_cross_platform_experience.html" class="text-primary font-medium">Mobile</a>
+                    <a href="user_authentication_registration_login.html" class="btn-secondary">Sign In</a>
+                    <a href="user_authentication_registration_login.html" class="btn-primary">Get Started</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-secondary-600 hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Device Sync Animation -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-accent-50 overflow-hidden">
+        <div class="absolute inset-0 bg-white/50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-secondary-800 mb-6 leading-tight">
+                        Your Tasks, <span class="text-primary">Everywhere</span> You Are
+                    </h1>
+                    <p class="text-xl text-secondary-600 mb-8 leading-relaxed">
+                        Experience seamless productivity across all your devices. TaskFlow Pro mobile delivers full functionality with touch-optimized design for productivity on-the-go.
+                    </p>
+                    
+                    <!-- Download Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                        <a href="javascript:void(0)" class="flex items-center justify-center bg-secondary-800 text-white px-6 py-4 rounded-lg font-semibold transition-all duration-200 hover:bg-secondary-900">
+                            <svg class="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                            </svg>
+                            Download for iOS
+                        </a>
+                        <a href="javascript:void(0)" class="flex items-center justify-center bg-accent text-white px-6 py-4 rounded-lg font-semibold transition-all duration-200 hover:bg-accent-600">
+                            <svg class="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                            </svg>
+                            Get on Android
+                        </a>
+                    </div>
+                    
+                    <!-- QR Code Section -->
+                    <div class="flex items-center justify-center lg:justify-start space-x-4 text-sm text-secondary-500">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-secondary-200 rounded-lg mr-3 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-secondary-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M3 11h8V3H3v8zm2-6h4v4H5V5zM3 21h8v-8H3v8zm2-6h4v4H5v-4zM13 3v8h8V3h-8zm6 6h-4V5h4v4zM19 13h2v2h-2zM13 13h2v2h-2zM15 15h2v2h-2zM13 17h2v2h-2zM15 19h2v2h-2zM17 17h2v2h-2zM17 13h2v2h-2zM19 15h2v2h-2z"/>
+                                </svg>
+                            </div>
+                            <span>Scan QR code to download</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Device Sync Animation -->
+                <div class="relative">
+                    <div class="flex items-center justify-center space-x-4">
+                        <!-- Phone -->
+                        <div class="bg-secondary-800 rounded-2xl p-2 transform rotate-12 hover:rotate-6 transition-transform duration-500">
+                            <div class="w-20 h-36 bg-white rounded-xl p-2">
+                                <div class="w-full h-2 bg-secondary-200 rounded mb-2"></div>
+                                <div class="space-y-1">
+                                    <div class="w-full h-2 bg-primary-100 rounded"></div>
+                                    <div class="w-3/4 h-2 bg-accent-100 rounded"></div>
+                                    <div class="w-full h-2 bg-secondary-100 rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tablet -->
+                        <div class="bg-secondary-700 rounded-2xl p-3 transform -rotate-6 hover:rotate-0 transition-transform duration-500">
+                            <div class="w-32 h-24 bg-white rounded-lg p-3">
+                                <div class="w-full h-2 bg-secondary-200 rounded mb-2"></div>
+                                <div class="grid grid-cols-2 gap-1">
+                                    <div class="h-3 bg-primary-100 rounded"></div>
+                                    <div class="h-3 bg-accent-100 rounded"></div>
+                                    <div class="h-3 bg-secondary-100 rounded"></div>
+                                    <div class="h-3 bg-warning-light rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Desktop -->
+                        <div class="bg-secondary-600 rounded-lg p-2 transform rotate-3 hover:-rotate-1 transition-transform duration-500">
+                            <div class="w-28 h-20 bg-white rounded p-2">
+                                <div class="w-full h-1 bg-secondary-200 rounded mb-1"></div>
+                                <div class="space-y-1">
+                                    <div class="w-full h-1 bg-primary-100 rounded"></div>
+                                    <div class="w-5/6 h-1 bg-accent-100 rounded"></div>
+                                    <div class="w-full h-1 bg-secondary-100 rounded"></div>
+                                    <div class="w-3/4 h-1 bg-warning-light rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sync Animation Indicator -->
+                    <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
+                        <div class="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-card">
+                            <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                            <span class="text-sm text-secondary-600 font-medium">Syncing in real-time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Touch-Optimized Interface Preview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-secondary-800 mb-4">
+                    Designed for Touch, Built for Speed
+                </h2>
+                <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+                    Every interaction is optimized for mobile productivity. Swipe, tap, and gesture your way to peak efficiency.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Swipe Gestures -->
+                <div class="card-elevated text-center group hover:shadow-primary transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary-800 mb-4">Intuitive Gestures</h3>
+                    <p class="text-secondary-600 mb-6">Swipe right to complete tasks, left to delete, or pull down to refresh. Natural gestures that feel familiar.</p>
+                    <div class="bg-secondary-50 rounded-lg p-4">
+                        <img src="https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Touch gesture interface" class="w-full h-32 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                </div>
+                
+                <!-- Quick Add Button -->
+                <div class="card-elevated text-center group hover:shadow-primary transition-all duration-300">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-200 transition-colors">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary-800 mb-4">Floating Quick Add</h3>
+                    <p class="text-secondary-600 mb-6">Always-accessible floating button stays within thumb reach. Add tasks instantly from anywhere in the app.</p>
+                    <div class="bg-secondary-50 rounded-lg p-4 relative">
+                        <div class="w-full h-32 bg-gradient-to-br from-primary-50 to-accent-50 rounded-lg flex items-center justify-center">
+                            <div class="absolute bottom-4 right-4 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-primary">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Voice Input -->
+                <div class="card-elevated text-center group hover:shadow-primary transition-all duration-300">
+                    <div class="w-16 h-16 bg-warning-light rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-warning transition-colors">
+                        <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-secondary-800 mb-4">Voice Task Creation</h3>
+                    <p class="text-secondary-600 mb-6">Speak your tasks naturally. Advanced voice recognition converts speech to organized tasks with smart categorization.</p>
+                    <div class="bg-secondary-50 rounded-lg p-4">
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-2 h-8 bg-warning rounded-full animate-pulse"></div>
+                            <div class="w-2 h-12 bg-warning rounded-full animate-pulse" style="animation-delay: 0.1s"></div>
+                            <div class="w-2 h-6 bg-warning rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+                            <div class="w-2 h-10 bg-warning rounded-full animate-pulse" style="animation-delay: 0.3s"></div>
+                            <div class="w-2 h-4 bg-warning rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offline Functionality -->
+    <section class="py-20 bg-gradient-to-br from-secondary-50 to-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-secondary-800 mb-6">
+                        Work Anywhere, <span class="text-primary">Even Offline</span>
+                    </h2>
+                    <p class="text-xl text-secondary-600 mb-8">
+                        Never lose productivity due to poor connectivity. TaskFlow Pro works seamlessly offline and syncs automatically when you're back online.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary-800 mb-2">Full Offline Access</h4>
+                                <p class="text-secondary-600">View, edit, and create tasks without internet connection. All changes are saved locally.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary-800 mb-2">Smart Sync</h4>
+                                <p class="text-secondary-600">Automatic synchronization when connectivity returns. Conflict resolution handles simultaneous edits.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary-800 mb-2">Data Security</h4>
+                                <p class="text-secondary-600">Local encryption ensures your tasks remain secure even when stored offline on your device.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Offline Visual -->
+                <div class="relative">
+                    <div class="bg-white rounded-2xl shadow-card p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-semibold text-secondary-800">Offline Mode</h3>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                <span class="text-sm text-secondary-600">No connection</span>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center p-3 bg-primary-50 rounded-lg">
+                                <div class="w-4 h-4 border-2 border-primary rounded mr-3"></div>
+                                <div class="flex-1">
+                                    <span class="text-sm text-secondary-700">Review quarterly goals</span>
+                                    <div class="text-xs text-secondary-500 mt-1">Edited offline • Will sync</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-3 bg-accent-50 rounded-lg">
+                                <div class="w-4 h-4 bg-accent rounded mr-3"></div>
+                                <div class="flex-1">
+                                    <span class="text-sm text-secondary-700 line-through">Call client about project</span>
+                                    <div class="text-xs text-secondary-500 mt-1">Completed offline • Will sync</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-3 bg-secondary-50 rounded-lg border-2 border-dashed border-secondary-300">
+                                <div class="w-4 h-4 border-2 border-secondary-400 rounded mr-3"></div>
+                                <div class="flex-1">
+                                    <span class="text-sm text-secondary-600">New task created offline</span>
+                                    <div class="text-xs text-secondary-500 mt-1">Pending sync</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 p-3 bg-warning-light rounded-lg">
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 text-warning mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-sm text-warning">3 changes will sync when online</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Push Notifications -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-secondary-800 mb-4">
+                    Stay Informed, Not Overwhelmed
+                </h2>
+                <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+                    Smart notifications that respect your focus time while keeping you on track with what matters most.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Smart Timing -->
+                <div class="card-elevated">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary-800 mb-3">Smart Timing</h3>
+                    <p class="text-secondary-600 mb-4">Notifications arrive when you're most likely to act on them, based on your usage patterns.</p>
+                    <div class="bg-secondary-50 rounded-lg p-3">
+                        <div class="text-sm text-secondary-600">Next reminder: 2:30 PM</div>
+                        <div class="text-xs text-secondary-500 mt-1">During your productive hours</div>
+                    </div>
+                </div>
+                
+                <!-- Location-Based -->
+                <div class="card-elevated">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary-800 mb-3">Location Reminders</h3>
+                    <p class="text-secondary-600 mb-4">Get reminded about location-specific tasks when you arrive at the right place.</p>
+                    <div class="bg-secondary-50 rounded-lg p-3">
+                        <div class="text-sm text-secondary-600">📍 "Buy groceries"</div>
+                        <div class="text-xs text-secondary-500 mt-1">When near grocery store</div>
+                    </div>
+                </div>
+                
+                <!-- Focus Mode -->
+                <div class="card-elevated">
+                    <div class="w-12 h-12 bg-warning-light rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary-800 mb-3">Focus Mode</h3>
+                    <p class="text-secondary-600 mb-4">Automatically silences non-urgent notifications during your designated focus periods.</p>
+                    <div class="bg-secondary-50 rounded-lg p-3">
+                        <div class="text-sm text-secondary-600">🔕 Focus mode active</div>
+                        <div class="text-xs text-secondary-500 mt-1">Until 4:00 PM</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Notification Examples -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-secondary-800 text-center mb-8">Notification Examples</h3>
+                <div class="max-w-md mx-auto space-y-4">
+                    <div class="bg-white border border-secondary-200 rounded-lg p-4 shadow-sm">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-white" viewBox="0 0 32 32" fill="currentColor">
+                                    <path d="M16 2L20 6H28V26H4V6H12L16 2Z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <div class="font-medium text-secondary-800">TaskFlow Pro</div>
+                                <div class="text-sm text-secondary-600">📋 "Prepare presentation" is due in 2 hours</div>
+                                <div class="text-xs text-secondary-500 mt-1">2 minutes ago</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white border border-secondary-200 rounded-lg p-4 shadow-sm">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-white" viewBox="0 0 32 32" fill="currentColor">
+                                    <path d="M16 2L20 6H28V26H4V6H12L16 2Z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <div class="font-medium text-secondary-800">TaskFlow Pro</div>
+                                <div class="text-sm text-secondary-600">🎉 Great job! You completed 8 tasks today</div>
+                                <div class="text-xs text-secondary-500 mt-1">5 minutes ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Testimonials -->
+    <section class="py-20 bg-gradient-to-br from-accent-50 to-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-secondary-800 mb-4">
+                    Productivity Stories from Mobile Users
+                </h2>
+                <p class="text-xl text-secondary-600">
+                    Real experiences from professionals who transformed their mobile productivity
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="card-elevated">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg" alt="Alex Chen" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-secondary-800">Alex Chen</h4>
+                            <p class="text-sm text-secondary-500">Digital Nomad</p>
+                        </div>
+                    </div>
+                    <p class="text-secondary-600 italic">"Managing projects across 3 time zones from my phone seemed impossible until TaskFlow Pro. The offline sync saved me during a 12-hour flight to Tokyo."</p>
+                    <div class="mt-4 flex items-center text-sm text-secondary-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Mobile-first user
+                    </div>
+                </div>
+                
+                <div class="card-elevated">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Jordan Martinez" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-secondary-800">Jordan Martinez</h4>
+                            <p class="text-sm text-secondary-500">Sales Executive</p>
+                        </div>
+                    </div>
+                    <p class="text-secondary-600 italic">"Voice input is a game-changer during my commute. I can capture client follow-ups while driving and they're perfectly organized by the time I reach the office."</p>
+                    <div class="mt-4 flex items-center text-sm text-secondary-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd"/>
+                        </svg>
+                        Voice input power user
+                    </div>
+                </div>
+                
+                <div class="card-elevated">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Maya Patel" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-secondary-800">Maya Patel</h4>
+                            <p class="text-sm text-secondary-500">Remote Team Lead</p>
+                        </div>
+                    </div>
+                    <p class="text-secondary-600 italic">"The location reminders are brilliant. I never forget to pick up supplies when I'm near the office, and my team stays coordinated across different cities."</p>
+                    <div class="mt-4 flex items-center text-sm text-secondary-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                        Location features enthusiast
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-secondary-800 mb-4">
+                    Built for Mobile Performance
+                </h2>
+                <p class="text-xl text-secondary-600">
+                    Optimized for speed, efficiency, and battery life on all mobile devices
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-primary mb-2">&lt;2s</div>
+                    <div class="text-secondary-600">Load Time</div>
+                    <div class="text-sm text-secondary-500 mt-1">Even on 3G networks</div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-accent mb-2">95%</div>
+                    <div class="text-secondary-600">Battery Efficient</div>
+                    <div class="text-sm text-secondary-500 mt-1">Minimal background usage</div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-warning-light rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-warning mb-2">12MB</div>
+                    <div class="text-secondary-600">App Size</div>
+                    <div class="text-sm text-secondary-500 mt-1">Lightweight installation</div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-secondary-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-secondary-700 mb-2">100%</div>
+                    <div class="text-secondary-600">Secure</div>
+                    <div class="text-sm text-secondary-500 mt-1">End-to-end encryption</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Widget & Home Screen Integration -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-secondary-800 mb-6">
+                        Your Tasks at a <span class="text-primary">Glance</span>
+                    </h2>
+                    <p class="text-xl text-secondary-600 mb-8">
+                        Home screen widgets keep your most important tasks visible without opening the app. Quick actions right from your home screen.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-secondary-700">Today's priority tasks widget</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-secondary-700">Quick add task shortcut</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-secondary-700">Progress tracking at a glance</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-secondary-700">Customizable widget sizes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Widget Preview -->
+                <div class="relative">
+                    <div class="bg-secondary-800 rounded-3xl p-6 max-w-sm mx-auto">
+                        <!-- Phone Screen -->
+                        <div class="bg-white rounded-2xl p-4 h-96 overflow-hidden">
+                            <!-- Status Bar -->
+                            <div class="flex justify-between items-center mb-4 text-xs text-secondary-600">
+                                <span>9:41</span>
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-4 h-2 border border-secondary-400 rounded-sm">
+                                        <div class="w-3 h-1 bg-accent rounded-sm"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Widget -->
+                            <div class="bg-primary-50 rounded-xl p-4 mb-4">
+                                <div class="flex items-center justify-between mb-3">
+                                    <h3 class="font-semibold text-secondary-800 text-sm">Today's Tasks</h3>
+                                    <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+                                        <svg class="w-3 h-3 text-white" viewBox="0 0 32 32" fill="currentColor">
+                                            <path d="M16 2L20 6H28V26H4V6H12L16 2Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="flex items-center text-xs">
+                                        <div class="w-3 h-3 border border-primary rounded-sm mr-2"></div>
+                                        <span class="text-secondary-700">Review project proposal</span>
+                                    </div>
+                                    <div class="flex items-center text-xs">
+                                        <div class="w-3 h-3 bg-accent rounded-sm mr-2"></div>
+                                        <span class="text-secondary-500 line-through">Call client</span>
+                                    </div>
+                                    <div class="flex items-center text-xs">
+                                        <div class="w-3 h-3 border border-warning rounded-sm mr-2"></div>
+                                        <span class="text-secondary-700">Prepare presentation</span>
+                                    </div>
+                                </div>
+                                <div class="mt-3 text-xs text-secondary-500">2 of 5 completed</div>
+                            </div>
+                            
+                            <!-- App Icons -->
+                            <div class="grid grid-cols-4 gap-4">
+                                <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" viewBox="0 0 32 32" fill="currentColor">
+                                        <path d="M16 2L20 6H28V26H4V6H12L16 2Z"/>
+                                    </svg>
+                                </div>
+                                <div class="w-12 h-12 bg-secondary-300 rounded-xl"></div>
+                                <div class="w-12 h-12 bg-secondary-300 rounded-xl"></div>
+                                <div class="w-12 h-12 bg-secondary-300 rounded-xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 bg-secondary-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+                Take Your Productivity Mobile
+            </h2>
+            <p class="text-xl text-secondary-300 mb-8">
+                Download TaskFlow Pro today and experience productivity that moves with you. Available on all platforms.
+            </p>
+            
+            <!-- Download Options -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a href="javascript:void(0)" class="flex items-center justify-center bg-white text-secondary-800 px-8 py-4 rounded-lg font-semibold transition-all duration-200 hover:bg-secondary-100">
+                    <svg class="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    App Store
+                </a>
+                <a href="javascript:void(0)" class="flex items-center justify-center bg-accent text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 hover:bg-accent-600">
+                    <svg class="w-6 h-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                    </svg>
+                    Google Play
+                </a>
+                <a href="user_authentication_registration_login.html" class="flex items-center justify-center bg-primary text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 hover:bg-primary-700">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
+                    </svg>
+                    Web App
+                </a>
+            </div>
+            
+            <p class="text-sm text-secondary-400">
+                Free to download • Premium features available • Works offline
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-secondary-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 6H28V26H4V6H12L16 2Z"/>
+                            <path d="M8 12H24M8 16H20M8 20H16" stroke="white" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold text-primary">TaskFlow Pro</span>
+                    </div>
+                    <p class="text-secondary-600 mb-4">
+                        Intelligent task management that adapts to how you actually work.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-secondary-800 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="dashboard_main_task_interface.html" class="text-secondary-600 hover:text-primary transition-colors">Dashboard</a></li>
+                        <li><a href="analytics_insights_productivity_dashboard.html" class="text-secondary-600 hover:text-primary transition-colors">Analytics</a></li>
+                        <li><a href="mobile_app_landing_cross_platform_experience.html" class="text-secondary-600 hover:text-primary transition-colors">Mobile App</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Integrations</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-secondary-800 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">About</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Blog</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Careers</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-secondary-800 mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Terms of Service</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-secondary-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-secondary-600">© 2025 TaskFlow Pro. All Rights Reserved.</p>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                    <span class="text-sm text-secondary-500">Made with</span>
+                    <svg class="w-4 h-4 text-error" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-sm text-secondary-500">for productivity</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Download Button -->
+    <button class="fixed bottom-6 right-6 bg-primary hover:bg-primary-700 text-white p-4 rounded-full shadow-primary transition-all duration-200 z-40" onclick="showDownloadOptions()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+        </svg>
+    </button>
+
+    <script>
+        // Download options functionality
+        function showDownloadOptions() {
+            alert('Choose your platform:\n\n📱 iOS App Store\n🤖 Google Play Store\n🌐 Web App (works offline)');
+        }
+        
+        // Device sync animation
+        function animateSync() {
+            const devices = document.querySelectorAll('.transform');
+            devices.forEach((device, index) => {
+                setTimeout(() => {
+                    device.style.transform = 'rotate(0deg) scale(1.05)';
+                    setTimeout(() => {
+                        device.style.transform = device.classList.contains('rotate-12') ? 'rotate(12deg) scale(1)' :
+                                                device.classList.contains('-rotate-6') ? 'rotate(-6deg) scale(1)' :
+                                                'rotate(3deg) scale(1)';
+                    }, 500);
+                }, index * 200);
+            });
+        }
+        
+        // Run sync animation every 5 seconds
+        setInterval(animateSync, 5000);
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all cards and sections
+        document.querySelectorAll('.card, .card-elevated, section').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Mobile-specific interactions
+        if ('ontouchstart' in window) {
+            // Add touch feedback for mobile users
+            document.querySelectorAll('.card-elevated, .btn-primary, .btn-secondary').forEach(el => {
+                el.addEventListener('touchstart', function() {
+                    this.style.transform = 'scale(0.98)';
+                });
+                
+                el.addEventListener('touchend', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

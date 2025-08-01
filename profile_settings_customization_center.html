@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile & Settings - TaskFlow Pro</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ftaskflowp3766back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white border-b border-secondary-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2L20 6H28V26H4V6H12L16 2Z"/>
+                        <path d="M8 12H24M8 16H20M8 20H16" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                    <span class="ml-2 text-xl font-bold text-primary">TaskFlow Pro</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_task_management_platform.html" class="text-secondary-600 hover:text-primary transition-colors">Home</a>
+                    <a href="dashboard_main_task_interface.html" class="text-secondary-600 hover:text-primary transition-colors">Dashboard</a>
+                    <a href="analytics_insights_productivity_dashboard.html" class="text-secondary-600 hover:text-primary transition-colors">Analytics</a>
+                    <a href="mobile_app_landing_cross_platform_experience.html" class="text-secondary-600 hover:text-primary transition-colors">Mobile</a>
+                    <a href="profile_settings_customization_center.html" class="text-primary font-medium">Profile</a>
+                    <a href="user_authentication_registration_login.html" class="btn-secondary">Sign Out</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-secondary-600 hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Header -->
+    <section class="bg-gradient-to-br from-primary-50 to-accent-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+                <!-- Profile Avatar -->
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Profile Avatar" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-card" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <button class="absolute bottom-0 right-0 bg-primary text-white p-2 rounded-full shadow-primary hover:bg-primary-700 transition-colors">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Profile Info -->
+                <div class="text-center md:text-left flex-1">
+                    <h1 class="text-3xl font-bold text-secondary-800 mb-2">Alex Johnson</h1>
+                    <p class="text-lg text-secondary-600 mb-4">Senior Product Manager</p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-secondary-500">
+                        <div class="flex items-center">
+                            <svg class="h-4 w-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                            </svg>
+                            Member since March 2024
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-4 w-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            1,247 tasks completed
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-4 w-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
+                            </svg>
+                            87% productivity score
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Actions -->
+                <div class="flex space-x-3">
+                    <button class="btn-secondary">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+                        </svg>
+                        Share Profile
+                    </button>
+                    <button class="btn-primary">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        Export Data
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Settings Navigation Tabs -->
+    <section class="bg-white border-b border-secondary-200 sticky top-16 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex space-x-8 overflow-x-auto">
+                <button class="py-4 px-2 border-b-2 border-primary text-primary font-medium whitespace-nowrap" onclick="showTab('account')">
+                    Account Information
+                </button>
+                <button class="py-4 px-2 border-b-2 border-transparent text-secondary-600 hover:text-primary font-medium whitespace-nowrap" onclick="showTab('preferences')">
+                    Preferences
+                </button>
+                <button class="py-4 px-2 border-b-2 border-transparent text-secondary-600 hover:text-primary font-medium whitespace-nowrap" onclick="showTab('themes')">
+                    Theme & Display
+                </button>
+                <button class="py-4 px-2 border-b-2 border-transparent text-secondary-600 hover:text-primary font-medium whitespace-nowrap" onclick="showTab('notifications')">
+                    Notifications
+                </button>
+                <button class="py-4 px-2 border-b-2 border-transparent text-secondary-600 hover:text-primary font-medium whitespace-nowrap" onclick="showTab('integrations')">
+                    Integrations
+                </button>
+                <button class="py-4 px-2 border-b-2 border-transparent text-secondary-600 hover:text-primary font-medium whitespace-nowrap" onclick="showTab('privacy')">
+                    Privacy & Security
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Settings Content -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Account Information Tab -->
+            <div id="accountTab" class="tab-content">
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Personal Information -->
+                    <div class="lg:col-span-2">
+                        <div class="card-elevated mb-8">
+                            <h2 class="text-xl font-semibold text-secondary-800 mb-6">Personal Information</h2>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-secondary-700 mb-2">First Name</label>
+                                    <input type="text" value="Alex" class="input-field" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-secondary-700 mb-2">Last Name</label>
+                                    <input type="text" value="Johnson" class="input-field" />
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label class="block text-sm font-medium text-secondary-700 mb-2">Email Address</label>
+                                    <input type="email" value="alex.johnson@company.com" class="input-field" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-secondary-700 mb-2">Job Title</label>
+                                    <input type="text" value="Senior Product Manager" class="input-field" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-secondary-700 mb-2">Company</label>
+                                    <input type="text" value="TechCorp Inc." class="input-field" />
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label class="block text-sm font-medium text-secondary-700 mb-2">Time Zone</label>
+                                    <select class="input-field">
+                                        <option>Pacific Standard Time (PST)</option>
+                                        <option>Eastern Standard Time (EST)</option>
+                                        <option>Central Standard Time (CST)</option>
+                                        <option>Mountain Standard Time (MST)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="flex justify-end mt-6">
+                                <button class="btn-primary">Save Changes</button>
+                            </div>
+                        </div>
+
+                        <!-- Password & Security -->
+                        <div class="card-elevated">
+                            <h2 class="text-xl font-semibold text-secondary-800 mb-6">Password & Security</h2>
+                            <div class="space-y-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-secondary-700 mb-2">Current Password</label>
+                                    <input type="password" class="input-field" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-secondary-700 mb-2">New Password</label>
+                                    <input type="password" class="input-field" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-secondary-700 mb-2">Confirm New Password</label>
+                                    <input type="password" class="input-field" />
+                                </div>
+                                <div class="bg-secondary-50 rounded-lg p-4">
+                                    <h3 class="font-medium text-secondary-800 mb-2">Two-Factor Authentication</h3>
+                                    <p class="text-sm text-secondary-600 mb-3">Add an extra layer of security to your account</p>
+                                    <button class="btn-secondary">Enable 2FA</button>
+                                </div>
+                            </div>
+                            <div class="flex justify-end mt-6">
+                                <button class="btn-primary">Update Password</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Account Stats -->
+                    <div>
+                        <div class="card-elevated mb-6">
+                            <h3 class="text-lg font-semibold text-secondary-800 mb-4">Account Statistics</h3>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-secondary-600">Tasks Completed</span>
+                                    <span class="font-semibold text-secondary-800">1,247</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-secondary-600">Projects Created</span>
+                                    <span class="font-semibold text-secondary-800">23</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-secondary-600">Time Saved</span>
+                                    <span class="font-semibold text-accent">47 hours</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-secondary-600">Current Streak</span>
+                                    <span class="font-semibold text-warning">12 days</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Achievement Badges -->
+                        <div class="card-elevated">
+                            <h3 class="text-lg font-semibold text-secondary-800 mb-4">Recent Achievements</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center p-3 bg-accent-50 rounded-lg">
+                                    <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-secondary-800">Task Master</h4>
+                                        <p class="text-sm text-secondary-600">Completed 1000+ tasks</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center p-3 bg-warning-light rounded-lg">
+                                    <div class="w-8 h-8 bg-warning rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-secondary-800">Streak Champion</h4>
+                                        <p class="text-sm text-secondary-600">10+ day streak</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Theme & Display Tab -->
+            <div id="themesTab" class="tab-content hidden">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Theme Selection -->
+                    <div class="card-elevated">
+                        <h2 class="text-xl font-semibold text-secondary-800 mb-6">Theme Selection</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-center p-4 border-2 border-primary rounded-lg bg-primary-50">
+                                <div class="flex-1">
+                                    <h3 class="font-medium text-secondary-800">Light Theme</h3>
+                                    <p class="text-sm text-secondary-600">Clean and bright interface for daytime use</p>
+                                </div>
+                                <div class="w-12 h-8 bg-white rounded border shadow-sm"></div>
+                                <input type="radio" name="theme" checked class="ml-4" />
+                            </div>
+                            <div class="flex items-center p-4 border-2 border-secondary-200 rounded-lg hover:border-secondary-300 transition-colors cursor-pointer">
+                                <div class="flex-1">
+                                    <h3 class="font-medium text-secondary-800">Dark Theme</h3>
+                                    <p class="text-sm text-secondary-600">Easy on the eyes for extended use</p>
+                                </div>
+                                <div class="w-12 h-8 bg-secondary-800 rounded border"></div>
+                                <input type="radio" name="theme" class="ml-4" />
+                            </div>
+                            <div class="flex items-center p-4 border-2 border-secondary-200 rounded-lg hover:border-secondary-300 transition-colors cursor-pointer">
+                                <div class="flex-1">
+                                    <h3 class="font-medium text-secondary-800">Auto Switch</h3>
+                                    <p class="text-sm text-secondary-600">Automatically switch based on system preference</p>
+                                </div>
+                                <div class="w-12 h-8 bg-gradient-to-r from-white to-secondary-800 rounded border"></div>
+                                <input type="radio" name="theme" class="ml-4" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accent Colors -->
+                    <div class="card-elevated">
+                        <h2 class="text-xl font-semibold text-secondary-800 mb-6">Accent Colors</h2>
+                        <div class="grid grid-cols-4 gap-4">
+                            <button class="w-12 h-12 bg-primary rounded-lg border-2 border-primary shadow-primary"></button>
+                            <button class="w-12 h-12 bg-accent rounded-lg border-2 border-transparent hover:border-accent transition-colors"></button>
+                            <button class="w-12 h-12 bg-warning rounded-lg border-2 border-transparent hover:border-warning transition-colors"></button>
+                            <button class="w-12 h-12 bg-error rounded-lg border-2 border-transparent hover:border-error transition-colors"></button>
+                            <button class="w-12 h-12 bg-purple-500 rounded-lg border-2 border-transparent hover:border-purple-500 transition-colors"></button>
+                            <button class="w-12 h-12 bg-pink-500 rounded-lg border-2 border-transparent hover:border-pink-500 transition-colors"></button>
+                            <button class="w-12 h-12 bg-indigo-500 rounded-lg border-2 border-transparent hover:border-indigo-500 transition-colors"></button>
+                            <button class="w-12 h-12 bg-teal-500 rounded-lg border-2 border-transparent hover:border-teal-500 transition-colors"></button>
+                        </div>
+                        
+                        <!-- Display Preferences -->
+                        <div class="mt-8">
+                            <h3 class="text-lg font-semibold text-secondary-800 mb-4">Display Preferences</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h4 class="font-medium text-secondary-800">Compact Mode</h4>
+                                        <p class="text-sm text-secondary-600">Show more content in less space</p>
+                                    </div>
+                                    <label class="relative inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" class="sr-only peer" />
+                                        <div class="w-11 h-6 bg-secondary-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-secondary-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                                    </label>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h4 class="font-medium text-secondary-800">Animations</h4>
+                                        <p class="text-sm text-secondary-600">Enable smooth transitions and effects</p>
+                                    </div>
+                                    <label class="relative inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" checked class="sr-only peer" />
+                                        <div class="w-11 h-6 bg-secondary-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-secondary-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notifications Tab -->
+            <div id="notificationsTab" class="tab-content hidden">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Email Notifications -->
+                    <div class="card-elevated">
+                        <h2 class="text-xl font-semibold text-secondary-800 mb-6">Email Notifications</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-medium text-secondary-800">Task Reminders</h4>
+                                    <p class="text-sm text-secondary-600">Get reminded about upcoming deadlines</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" checked class="sr-only peer" />
+                                    <div class="w-11 h-6 bg-secondary-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-secondary-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                                </label>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-medium text-secondary-800">Weekly Summary</h4>
+                                    <p class="text-sm text-secondary-600">Weekly productivity report</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" checked class="sr-only peer" />
+                                    <div class="w-11 h-6 bg-secondary-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-secondary-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                                </label>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-medium text-secondary-800">Team Updates</h4>
+                                    <p class="text-sm text-secondary-600">Notifications about shared projects</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" class="sr-only peer" />
+                                    <div class="w-11 h-6 bg-secondary-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-secondary-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Push Notifications -->
+                    <div class="card-elevated">
+                        <h2 class="text-xl font-semibold text-secondary-800 mb-6">Push Notifications</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-medium text-secondary-800">Instant Alerts</h4>
+                                    <p class="text-sm text-secondary-600">Real-time notifications for urgent tasks</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" checked class="sr-only peer" />
+                                    <div class="w-11 h-6 bg-secondary-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-secondary-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                                </label>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-medium text-secondary-800">Daily Digest</h4>
+                                    <p class="text-sm text-secondary-600">Morning summary of today's tasks</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" checked class="sr-only peer" />
+                                    <div class="w-11 h-6 bg-secondary-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-secondary-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Quiet Hours -->
+                        <div class="mt-8">
+                            <h3 class="text-lg font-semibold text-secondary-800 mb-4">Quiet Hours</h3>
+                            <p class="text-sm text-secondary-600 mb-4">Set times when you don't want to receive notifications</p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-secondary-700 mb-2">Start Time</label>
+                                    <input type="time" value="22:00" class="input-field" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-secondary-700 mb-2">End Time</label>
+                                    <input type="time" value="08:00" class="input-field" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integrations Tab -->
+            <div id="integrationsTab" class="tab-content hidden">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Connected Apps -->
+                    <div class="card-elevated">
+                        <h2 class="text-xl font-semibold text-secondary-800 mb-6">Connected Applications</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-4 border border-secondary-200 rounded-lg">
+                                <div class="flex items-center">
+                                    <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Google Calendar" class="w-10 h-10 rounded-lg mr-3" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    <div>
+                                        <h4 class="font-medium text-secondary-800">Google Calendar</h4>
+                                        <p class="text-sm text-secondary-600">Sync tasks with calendar events</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-accent-light text-accent text-xs rounded-full">Connected</span>
+                                    <button class="text-secondary-400 hover:text-secondary-600">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-4 border border-secondary-200 rounded-lg">
+                                <div class="flex items-center">
+                                    <img src="https://images.pixabay.com/photo/2016/12/28/09/36/slack-1935975_1280.png" alt="Slack" class="w-10 h-10 rounded-lg mr-3" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    <div>
+                                        <h4 class="font-medium text-secondary-800">Slack</h4>
+                                        <p class="text-sm text-secondary-600">Get task notifications in Slack</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="px-2 py-1 bg-accent-light text-accent text-xs rounded-full">Connected</span>
+                                    <button class="text-secondary-400 hover:text-secondary-600">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Available Integrations -->
+                    <div class="card-elevated">
+                        <h2 class="text-xl font-semibold text-secondary-800 mb-6">Available Integrations</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-4 border border-secondary-200 rounded-lg">
+                                <div class="flex items-center">
+                                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2939&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Microsoft Teams" class="w-10 h-10 rounded-lg mr-3" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    <div>
+                                        <h4 class="font-medium text-secondary-800">Microsoft Teams</h4>
+                                        <p class="text-sm text-secondary-600">Collaborate on tasks with your team</p>
+                                    </div>
+                                </div>
+                                <button class="btn-secondary">Connect</button>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-4 border border-secondary-200 rounded-lg">
+                                <div class="flex items-center">
+                                    <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Trello" class="w-10 h-10 rounded-lg mr-3" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    <div>
+                                        <h4 class="font-medium text-secondary-800">Trello</h4>
+                                        <p class="text-sm text-secondary-600">Import boards and cards</p>
+                                    </div>
+                                </div>
+                                <button class="btn-secondary">Connect</button>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-4 border border-secondary-200 rounded-lg">
+                                <div class="flex items-center">
+                                    <img src="https://images.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="GitHub" class="w-10 h-10 rounded-lg mr-3" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    <div>
+                                        <h4 class="font-medium text-secondary-800">GitHub</h4>
+                                        <p class="text-sm text-secondary-600">Track issues and pull requests</p>
+                                    </div>
+                                </div>
+                                <button class="btn-secondary">Connect</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy & Security Tab -->
+            <div id="privacyTab" class="tab-content hidden">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Privacy Controls -->
+                    <div class="card-elevated">
+                        <h2 class="text-xl font-semibold text-secondary-800 mb-6">Privacy Controls</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-medium text-secondary-800">Analytics Tracking</h4>
+                                    <p class="text-sm text-secondary-600">Help improve TaskFlow Pro with usage analytics</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" checked class="sr-only peer" />
+                                    <div class="w-11 h-6 bg-secondary-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-secondary-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                                </label>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-medium text-secondary-800">Profile Visibility</h4>
+                                    <p class="text-sm text-secondary-600">Allow others to find your public profile</p>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" class="sr-only peer" />
+                                    <div class="w-11 h-6 bg-secondary-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-secondary-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                                </label>
+                            </div>
+                            
+                            <div class="bg-secondary-50 rounded-lg p-4">
+                                <h3 class="font-medium text-secondary-800 mb-2">Data Export</h3>
+                                <p class="text-sm text-secondary-600 mb-3">Download all your data in a portable format</p>
+                                <button class="btn-secondary">Request Data Export</button>
+                            </div>
+                            
+                            <div class="bg-error-light rounded-lg p-4">
+                                <h3 class="font-medium text-error mb-2">Delete Account</h3>
+                                <p class="text-sm text-secondary-600 mb-3">Permanently delete your account and all associated data</p>
+                                <button class="bg-error text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">Delete Account</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security Settings -->
+                    <div class="card-elevated">
+                        <h2 class="text-xl font-semibold text-secondary-800 mb-6">Security Settings</h2>
+                        <div class="space-y-6">
+                            <div class="bg-accent-50 rounded-lg p-4">
+                                <div class="flex items-center mb-2">
+                                    <svg class="w-5 h-5 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <h3 class="font-medium text-secondary-800">Account Security Score</h3>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-2xl font-bold text-accent">85%</span>
+                                    <span class="text-sm text-secondary-600">Very Good</span>
+                                </div>
+                                <div class="w-full bg-secondary-200 rounded-full h-2 mt-2">
+                                    <div class="bg-accent h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <h3 class="font-medium text-secondary-800">Recent Activity</h3>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between p-3 bg-secondary-50 rounded-lg">
+                                        <div class="flex items-center">
+                                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                                            <div>
+                                                <p class="text-sm font-medium text-secondary-800">Login from Chrome</p>
+                                                <p class="text-xs text-secondary-500">San Francisco, CA • 2 hours ago</p>
+                                            </div>
+                                        </div>
+                                        <svg class="w-4 h-4 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between p-3 bg-secondary-50 rounded-lg">
+                                        <div class="flex items-center">
+                                            <div class="w-2 h-2 bg-secondary-400 rounded-full mr-3"></div>
+                                            <div>
+                                                <p class="text-sm font-medium text-secondary-800">Password changed</p>
+                                                <p class="text-xs text-secondary-500">3 days ago</p>
+                                            </div>
+                                        </div>
+                                        <svg class="w-4 h-4 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4 border-t border-secondary-200">
+                                <button class="w-full btn-secondary">View All Security Activity</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-secondary-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 6H28V26H4V6H12L16 2Z"/>
+                            <path d="M8 12H24M8 16H20M8 20H16" stroke="white" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold text-primary">TaskFlow Pro</span>
+                    </div>
+                    <p class="text-secondary-600 mb-4">
+                        Intelligent task management that adapts to how you actually work.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-secondary-400 hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-secondary-800 mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="dashboard_main_task_interface.html" class="text-secondary-600 hover:text-primary transition-colors">Dashboard</a></li>
+                        <li><a href="analytics_insights_productivity_dashboard.html" class="text-secondary-600 hover:text-primary transition-colors">Analytics</a></li>
+                        <li><a href="mobile_app_landing_cross_platform_experience.html" class="text-secondary-600 hover:text-primary transition-colors">Mobile App</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Integrations</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-secondary-800 mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">About</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Blog</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Careers</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-secondary-800 mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Terms of Service</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-600 hover:text-primary transition-colors">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-secondary-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-secondary-600">© 2025 TaskFlow Pro. All Rights Reserved.</p>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                    <span class="text-sm text-secondary-500">Made with</span>
+                    <svg class="w-4 h-4 text-error" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-sm text-secondary-500">for productivity</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab switching functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+            
+            // Remove active state from all tab buttons
+            const tabButtons = document.querySelectorAll('section:nth-child(3) button');
+            tabButtons.forEach(button => {
+                button.className = 'py-4 px-2 border-b-2 border-transparent text-secondary-600 hover:text-primary font-medium whitespace-nowrap';
+            });
+            
+            // Show selected tab content
+            const selectedTab = document.getElementById(tabName + 'Tab');
+            if (selectedTab) {
+                selectedTab.classList.remove('hidden');
+            }
+            
+            // Add active state to clicked button
+            event.target.className = 'py-4 px-2 border-b-2 border-primary text-primary font-medium whitespace-nowrap';
+        }
+        
+        // Initialize with account tab
+        document.addEventListener('DOMContentLoaded', function() {
+            showTab('account');
+        });
+        
+        // Theme switching functionality
+        document.querySelectorAll('input[name="theme"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.checked) {
+                    // Apply theme changes here
+                    console.log('Theme changed to:', this.closest('.flex').querySelector('h3').textContent);
+                }
+            });
+        });
+        
+        // Accent color selection
+        document.querySelectorAll('.grid.grid-cols-4 button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active state from all color buttons
+                document.querySelectorAll('.grid.grid-cols-4 button').forEach(btn => {
+                    btn.classList.remove('border-2', 'shadow-primary');
+                    btn.classList.add('border-2', 'border-transparent');
+                });
+                
+                // Add active state to clicked button
+                this.classList.remove('border-transparent');
+                this.classList.add('shadow-primary');
+                
+                // Get the background color class
+                const colorClass = this.className.match(/bg-\w+-\d+/)[0];
+                console.log('Accent color changed to:', colorClass);
+            });
+        });
+        
+        // Toggle switches
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                console.log('Setting changed:', this.closest('.flex').querySelector('h4').textContent, this.checked);
+            });
+        });
+        
+        // Save changes functionality
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            if (button.textContent.includes('Save') || button.textContent.includes('Update')) {
+                button.addEventListener('click', function() {
+                    // Show success message
+                    const originalText = this.textContent;
+                    this.textContent = 'Saved!';
+                    this.classList.add('bg-accent');
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.classList.remove('bg-accent');
+                    }, 2000);
+                });
+            }
+        });
+        
+        // Data export functionality
+        document.querySelector('button:contains("Request Data Export")')?.addEventListener('click', function() {
+            alert('Data export request submitted. You will receive an email with download instructions within 24 hours.');
+        });
+        
+        // Account deletion confirmation
+        document.querySelector('button:contains("Delete Account")')?.addEventListener('click', function() {
+            if (confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
+                if (confirm('This will permanently delete all your tasks, projects, and data. Type "DELETE" to confirm.')) {
+                    alert('Account deletion process initiated. You will receive a confirmation email.');
+                }
+            }
+        });
+        
+        // Profile picture upload
+        document.querySelector('.absolute.bottom-0.right-0 button')?.addEventListener('click', function() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+            input.onchange = function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.querySelector('img[alt="Profile Avatar"]').src = e.target.result;
+                    };
+                    reader.readAsDataURL(file);
+                }
+            };
+            input.click();
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
